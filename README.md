@@ -1,3 +1,5 @@
-Run `ruby bug_test.rb` to see the failing test.
+This bug was introduced in rollbar 1.19.0.
 
-If you edit `Gemfile`, enable version `2.18.2` and run `budle` the test should pass.
+Run `BUNDLE_GEMFILE=rollbar-1-18-2 ruby bug_test.rb` to see the working version.
+
+Run `BUNDLE_GEMFILE=rollbar-2-22-1 ruby bug_test.rb` to see the failing version.
